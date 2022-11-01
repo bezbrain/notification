@@ -36,7 +36,7 @@ genContainer.forEach(function(container) {
                 number = 0;
            }
     });
-    
+});
 
-})
+
 
