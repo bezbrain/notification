@@ -14,6 +14,27 @@ body {
   align-items: center;
 }
 
+.switcher-on {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 8px 0 0 8px;
+  font-size: 30px;
+}
+
+.switcher-off {
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 8px 0 0 8px;
+  font-size: 30px;
+}
+
+.show-toggle-color {
+  background-color: black;
+}
+
 .main {
   background: hsl(0, 0%, 100%);
   width: 670px;

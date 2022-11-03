@@ -38,5 +38,28 @@ genContainer.forEach(function(container) {
     });
 });
 
+const switcherOn = document.querySelector(".switcher-on");
+const switcherOff = document.querySelector(".switcher-off");
+
+switcherOff.addEventListener("click", function() {
+    document.body.classList.toggle("show-toggle-color");
+    
+    if(document.body.classList.contains("show-toggle-color")) {
+        switcherOn.style.display = "block";
+        switcherOn.style.color = "white";
+        switcherOff.style.display = "none";
+    }
+    else {
+        switcherOn.style.backgroundColor = "unset";
+    }
+
+});
+
+switcherOn.addEventListener("click", function() {
+    document.body.classList.remove("show-toggle-color");
+    switcherOff.style.display = "block";
+    switcherOn.style.display = "none";
+})
+
 
 
